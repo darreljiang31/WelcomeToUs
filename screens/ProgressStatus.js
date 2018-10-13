@@ -4,9 +4,9 @@ import * as Progress from 'react-native-progress';
 export default (props) => {
   const progressPercentage = props.progressPercentage;
   return (
-    <Container style={{alignSelf: 'center'}}>
+    <Container style={{alignSelf: 'center', height:10}}>
       <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-      <Progress.Bar progress={1} width={300} />
+      <Progress.Bar progress={progressPercentage} width={300} />
     </Container>
-)
+  )
 }

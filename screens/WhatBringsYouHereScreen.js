@@ -10,8 +10,8 @@ import {
   ListItem,
   Text,
 } from 'native-base';
-import {ProgressStatus} from './ProgressStatus'
-
+import * as Progress from 'react-native-progress';
+import ProgressStatus from './ProgressStatus'
 
 export default class ButtonThemeExample extends Component {
 
@@ -36,10 +36,10 @@ export default class ButtonThemeExample extends Component {
   render() {
     return (
       <Container>
-        <Header>
-          <ProgressStatus progress={1} />
-        </Header>
+        <Header />
           <Content>
+            <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
+            <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> What's bringing you here? </Text>
             <Container style={styles.formContainer}>
               <ListItem>
@@ -125,5 +125,5 @@ const styles = StyleSheet.create({
   formContainer: {
     left: 41,
     top: 110,
-  }
+  },
 });
