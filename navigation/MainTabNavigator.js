@@ -8,6 +8,7 @@ import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
+import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen'
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -46,6 +47,10 @@ HomeStack.navigationOptions = {
   ),
 };
 
+const WhatBringsYouHereStack = createStackNavigator({
+  WhatBringsYouHere: WhatBringsYouHereScreen,
+})
+
 const LinksStack = createStackNavigator({
   Links: LinksScreen,
 });
@@ -79,4 +84,5 @@ export default createBottomTabNavigator({
   LinksStack,
   SettingsStack,
   ButtonStack,
+  WhatBringsYouHereStack,
 });
