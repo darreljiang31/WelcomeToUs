@@ -9,6 +9,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
+import MentorScreen from '../screens/MentorScreen';
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -31,6 +32,7 @@ ButtonStack.navigationOptions = {
 
 const HomeStack = createStackNavigator({
   Main: MainScreen,
+  Mentor: MentorScreen,
 });
 
 HomeStack.navigationOptions = {
