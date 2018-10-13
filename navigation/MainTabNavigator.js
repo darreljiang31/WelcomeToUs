@@ -8,6 +8,7 @@ import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
+import MainScreen from '../screens/MainScreen';
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -29,11 +30,11 @@ ButtonStack.navigationOptions = {
 
 
 const HomeStack = createStackNavigator({
-  Home: HelloScreen,
+  Main: MainScreen,
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: 'Main',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
