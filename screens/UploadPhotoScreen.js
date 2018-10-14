@@ -14,7 +14,7 @@ export default class UploadPhotoScreen extends Component {
       <Content style={{paddingTop: 50}}>
         {/* <ProgressStatus progressPercentage={0.6} /> */}
         <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
-        <Progress.Bar progress={0.2} width={300} style={{alignSelf: 'center'}} />
+        <Progress.Bar progress={0.2} width={300} style={{alignSelf: 'center'}} color='rgba(232, 36, 70, 1)'/>
 
         {/* <Content> */}
         <Text style={{fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light', backgroundColor: "#222222", top: 20, color:'#D4D4D4'}}> Upload your photo! </Text>

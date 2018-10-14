@@ -41,7 +41,7 @@ export default class ButtonThemeExample extends Component {
       <Container style={{backgroundColor: "#222222"}}>
           <Content style={{padding: 50}}>
             <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
-            <Progress.Bar progress={0.4} width={300} style={{alignSelf: 'center'}} />
+            <Progress.Bar progress={0.4} width={300} style={{alignSelf: 'center'}} color='rgba(232, 36, 70, 1)'/>
             <Text style={styles.messageText}> What's bringing you here? </Text>
             <Container style={{backgroundColor: "#222222", top: 70}}>
               <ListItem>

@@ -37,7 +37,7 @@ export default class ButtonThemeExample extends Component {
         <Header />
           <Content>
             <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-            <Progress.Bar progress={0.8} width={300} style={{alignSelf: 'center'}} />
+            <Progress.Bar progress={0.8} width={300} style={{alignSelf: 'center'}} color='rgba(232, 36, 70, 1)' />
             <Text style={styles.messageText}> Tell us a little about yourself. </Text>
             {/* <InputGroup style={styles.inputBox} borderType="regular"> */}
 

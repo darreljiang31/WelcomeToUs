@@ -6,7 +6,7 @@ export default (props) => {
   return (
     <Container style={{alignSelf: 'center', height:10}}>
       <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-      <Progress.Bar progress={progressPercentage} width={300} />
+      <Progress.Bar progress={progressPercentage} width={300} color='rgba(232, 36, 70, 1)'/>
     </Container>
   )
 }
