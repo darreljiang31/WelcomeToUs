@@ -39,7 +39,7 @@ export default class CardListExample extends Component {
               }
               button onPress={() =>{
               this.setState({language: "English"}, () =>{
-              setTimeout(() => {this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "English"})},600);
+              setTimeout(() => {this.props.navigation.navigate('Hello', {language: "English"})},600);
               })
               }}>
               {
@@ -60,7 +60,7 @@ export default class CardListExample extends Component {
                 {alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}
               }                button onPress={() =>{
                 this.setState({language: "French"},
-                ()=> {setTimeout(() => {this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "French"})},600);}
+                ()=> {setTimeout(() => {this.props.navigation.navigate('Hello', {language: "French"})},600);}
               )
              }}>
              {
@@ -80,7 +80,7 @@ export default class CardListExample extends Component {
                 {alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}
               }               button onPress={() =>{
                this.setState({language: "Spanish"},
-               ()=> {setTimeout(() => {this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Spanish"})},600); }
+               ()=> {setTimeout(() => {this.props.navigation.navigate('Hello', {language: "Spanish"})},600); }
               )
              }}>
              {
@@ -100,7 +100,7 @@ export default class CardListExample extends Component {
                 {alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}
               }               button onPress={() =>{
                this.setState({language: "Sanskrit"},
-               ()=>{setTimeout(() => {this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Sanskrit"})},600)}
+               ()=>{setTimeout(() => {this.props.navigation.navigate('Hello', {language: "Sanskrit"})},600)}
               )
              }}>
               {
@@ -120,7 +120,7 @@ export default class CardListExample extends Component {
                 {alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}
               }               button onPress={() =>{
                this.setState({language: "Italian"},
-               ()=>{setTimeout(() => {this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Italian"})},600)}
+               ()=>{setTimeout(() => {this.props.navigation.navigate('Hello', {language: "Italian"})},600)}
               )
              }}>
        {
