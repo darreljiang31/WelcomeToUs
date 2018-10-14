@@ -9,6 +9,7 @@ import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen';
 import LanguageSelectionScreen from '../screens/LanguageSelectionScreen';
 import NumberOfChildrenScreen from '../screens/NumberOfChildrenScreen';
 import BioScreen from '../screens/BioScreen';
+import ProfileScreen from '../screens/ProfileScreen'
 import WeNeedToGetToKnowYouScreen from '../screens/WeNeedToGetToKnowYouScreen';
 import UploadPhotoScreen from '../screens/UploadPhotoScreen'
 import TabBarIcon from '../components/TabBarIcon';
@@ -20,7 +21,6 @@ import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
 import MentorScreen from '../screens/MentorScreen';
 import MentorProfileScreen from '../screens/MentorProfileScreen';
-import ProfileScreen from '../screens/ProfileScreen'
 import SlideEntryScreen from '../screens/SliderEntry'
 
 const ProfileStack = createStackNavigator({
@@ -46,6 +46,7 @@ const HomeStack = createStackNavigator({
   Main: MainScreen,
   Mentor: MentorScreen,
   MentorProfile: MentorProfileScreen,
+  LanguageSelection: LanguageSelectionScreen,
   Hello: HelloScreen,
   WhereDoYouLive: WhereDoYouLiveScreen,
   WhatBringsYouHere: WhatBringsYouHereScreen,
