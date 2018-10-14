@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Button, Icon, Text } from 'native-base';
+import { Container, Header, Content, Button, Icon, Text, List, ListItem, Left, Thumbnail, Body, Right } from 'native-base';
 import Carousel from 'react-native-snap-carousel';
 import { StyleSheet, Dimensions, Platform, View  } from 'react-native'
 import SliderEntry from './SliderEntry'
@@ -42,6 +42,79 @@ export default class MentorScreen extends Component {
               sliderWidth={sliderWidth}
               itemWidth={itemWidth}
           />
+
+          <List>
+            <ListItem thumbnail>
+              <Left>
+                <Thumbnail square source={{ uri: 'http://footage.framepool.com/shotimg/qf/792533153-chin-finger-well-dressed-thinking.jpg' }} />
+              </Left>
+              <Body>
+                <Text>Sankhadeep</Text>
+                <Text note numberOfLines={1}>Found an awesome home in . .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+            <ListItem thumbnail>
+              <Left>
+                <Thumbnail square source={{ uri: 'http://www.freegreatpicture.com/files/94/28299-business-people-stock.jpg' }} />
+              </Left>
+              <Body>
+                <Text>Adeep</Text>
+                <Text note numberOfLines={1}>Moving to this area, can someone help. .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+            <ListItem thumbnail>
+              <Left>
+                <Thumbnail square source={{ uri: 'https://vignette.wikia.nocookie.net/creation/images/5/57/7-weird-stock-images-of-people-struggling-with-basic-cooking.jpg/revision/latest?cb=20160819222605' }} />
+              </Left>
+              <Body>
+                <Text>Chen</Text>
+                <Text note numberOfLines={1}>Good places to eat around . .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+            <ListItem thumbnail>
+              <Left>
+                <Thumbnail square source={{ uri: 'http://footage.framepool.com/shotimg/qf/115660054-presbyopia-bald-head-formal-wear-black-color.jpg' }} />
+              </Left>
+              <Body>
+                <Text>Aaron</Text>
+                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+            <ListItem thumbnail>
+              <Left>
+                <Thumbnail square source={{ uri: 'http://footage.framepool.com/shotimg/qf/792533153-chin-finger-well-dressed-thinking.jpg' }} />
+              </Left>
+              <Body>
+                <Text>Sankhadeep</Text>
+                <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+              </Body>
+              <Right>
+                <Button transparent>
+                  <Text>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+          </List>
         </Content>
       </Container>
     );

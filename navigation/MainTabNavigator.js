@@ -74,43 +74,13 @@ const MentorProfileStack = createStackNavigator({
   Profile: MentorProfileScreen,
 })
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
-});
-
 const LanguageSelectionStack = createStackNavigator({
   LanguageSelectionScreen: LanguageSelectionScreen,
 })
-
-LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link'}
-    />
-  ),
-};
-
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
-});
-
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
-    />
-  ),
-};
 
 export default createBottomTabNavigator({
   LanguageSelectionStack,
   MentorProfileStack,
   HomeStack,
-  LinksStack,
-  SettingsStack,
   ButtonStack,
 });
