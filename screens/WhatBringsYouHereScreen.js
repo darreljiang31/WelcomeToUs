@@ -11,7 +11,7 @@ import {
   Text,
 } from 'native-base';
 import * as Progress from 'react-native-progress';
-import ProgressStatus from './ProgressStatus'
+import ProgressStatus from './ProgressStatus';
 
 export default class ButtonThemeExample extends Component {
 
