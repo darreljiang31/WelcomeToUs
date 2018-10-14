@@ -42,7 +42,7 @@ export default class ButtonThemeExample extends Component {
         <Header />
           <Content>
             <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-            <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
+            <Progress.Bar progress={0.4} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> What's bringing you here? </Text>
             <Container style={styles.formContainer}>
               <ListItem>

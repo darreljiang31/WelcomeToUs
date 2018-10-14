@@ -31,8 +31,6 @@ export default class CardListExample extends Component {
       <Container>
         <Header />
         <Content>
-        <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-        <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
           <Card style={{padding: 30}}>
             <CardItem button onPress={() =>{
               this.setState({language: "English"})

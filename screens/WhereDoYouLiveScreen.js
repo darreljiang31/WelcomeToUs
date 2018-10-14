@@ -36,7 +36,7 @@ export default class ButtonThemeExample extends Component {
         <Header />
           <Content style={{height: 200}}>
             <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
-            <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
+            <Progress.Bar progress={0.2} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> Where do you live? </Text>
             <Container style={{height: 170}}>
               <Container >

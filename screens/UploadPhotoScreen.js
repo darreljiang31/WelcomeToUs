@@ -12,7 +12,7 @@ export default class UploadPhotoScreen extends Component {
       <Container>
 
       <Header />
-      <ProgressStatus progressPercentage={0.3}/>
+      <ProgressStatus progressPercentage={0.6}/>
 
       {/* <Content> */}
       <Text style={{fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light'}}> Upload your photo! </Text>
@@ -21,7 +21,8 @@ export default class UploadPhotoScreen extends Component {
       {/* </Content> */}
   <DoubleButton
     text1="UPLOAD"
-    handleClick={() => this.props.navigation.navigate('Bio')}
+    text2="Continue"
+    handleClick2={() => this.props.navigation.navigate('Bio')}
   />
       </Container>
     )
