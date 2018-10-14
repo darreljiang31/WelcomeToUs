@@ -113,4 +113,6 @@ export default createBottomTabNavigator({
   ProfileStack,
   MentorProfileStack,
   LanguageSelectionStack,
-});
+},{tabBarOptions: {style: {    backgroundColor: '#E82446'
+}}});
+
