@@ -25,6 +25,8 @@ export default class CardListExample extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation;
+
     return (
       <Container>
         <Header />
@@ -32,31 +34,46 @@ export default class CardListExample extends Component {
         <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
         <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
           <Card style={{padding: 30}}>
-            <CardItem button onPress={() => this.setState({language: "English"})}>
+            <CardItem button onPress={() =>{
+              this.setState({language: "English"})
+              this.props.navigation.navigate('Hello')
+              }}>
               <Text>Hello</Text>
               <Right>
                 <Icon name="arrow-forward" />
               </Right>
              </CardItem>
-             <CardItem button onPress={() => this.setState({language: "French"})}>
+             <CardItem button onPress={() =>{
+                this.setState({language: "French"})
+                this.props.navigation.navigate('Hello')
+             }}>
               <Text>Bonjour</Text>
               <Right>
                 <Icon name="arrow-forward" />
               </Right>
              </CardItem>
-             <CardItem button onPress={() => this.setState({language: "Spanish"})}>
+             <CardItem button onPress={() =>{
+               this.setState({language: "Spanish"})
+               this.props.navigation.navigate('Hello')
+             }}>
               <Text>Hola</Text>
               <Right>
                 <Icon name="arrow-forward" />
               </Right>
              </CardItem>
-             <CardItem button onPress={() => this.setState({language: "Sanskrit"})}>
+             <CardItem button onPress={() =>{
+               this.setState({language: "Sanskrit"})
+               this.props.navigation.navigate('Hello')
+             }}>
               <Text>Namaste</Text>
               <Right>
                 <Icon name="arrow-forward" />
               </Right>
              </CardItem>
-             <CardItem button onPress={() => this.setState({language: "Italian"})}>
+             <CardItem button onPress={() =>{
+               this.setState({language: "Italian"})
+               this.props.navigation.navigate('Hello')
+             }}>
               <Text>Ciao</Text>
               <Right>
                 <Icon name="arrow-forward" />

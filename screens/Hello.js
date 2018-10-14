@@ -10,6 +10,7 @@ export default class ButtonThemeExample extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <Container >
         <Header />
@@ -26,7 +27,11 @@ export default class ButtonThemeExample extends Component {
             </Item>
           </Form>
 
-          <Button primary style={styles.button}><Text> OK </Text></Button>
+          <Button
+            primary style={styles.button}
+            onPress={() => this.props.navigation.navigate('WhereDoYouLive')}
+          >
+          <Text> OK </Text></Button>
 
         </Content>
       </Container>

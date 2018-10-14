@@ -31,6 +31,7 @@ export default class ButtonThemeExample extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <Container>
         <Header />
@@ -62,7 +63,10 @@ export default class ButtonThemeExample extends Component {
               marginBottom: 50,
             }}> WHY DO WE ASK? </Text>
 
-            <DoubleButoon text1={"DONE"}/>
+            <DoubleButoon
+              text1={"DONE"}
+              handleClick={() => this.props.navigation.navigate('Main')}
+            />
           </Content>
       </Container>
     );
