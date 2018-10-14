@@ -18,7 +18,7 @@ export default class ButtonThemeExample extends Component {
       <Container style={{backgroundColor: "#222222"}}>
         <Content style={{paddingTop: 50}}>
         <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
-        <Progress.Bar progress={0} width={300} style={{alignSelf: 'center'}} />
+        <Progress.Bar progress={0.5} width={300} style={{alignSelf: 'center', color:'rgba(232, 36, 70, 1)'}} />
           <Text style={styles.text}>Hello! What's your name?</Text>
 
           <Form style={styles.input}>
@@ -48,15 +48,14 @@ const styles = StyleSheet.create({
   text: {
     position: 'absolute',
     top: 50,
-    height: 29,
     width: '100%',
     textAlign: 'center',
-    fontSize:25,
+    fontSize: 36,
     color:'#D4D4D4'
   },
   input: {
     position: 'absolute',
-    top: 100,
+    top: 140,
     height: 29,
     width:'100%',
   },

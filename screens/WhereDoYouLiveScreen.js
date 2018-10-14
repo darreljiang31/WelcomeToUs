@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     width: 330,
     height: 150,
     left: 23,
-    top: 80,
+    top: 40,
   },
   inputBox: {
     left: 41,

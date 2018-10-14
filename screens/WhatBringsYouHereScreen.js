@@ -43,7 +43,7 @@ export default class ButtonThemeExample extends Component {
             <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
             <Progress.Bar progress={0.4} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> What's bringing you here? </Text>
-            <Container style={styles.formContainer} style={{backgroundColor: "#222222"}}>
+            <Container style={{backgroundColor: "#222222", top: 70}}>
               <ListItem>
                 <CheckBox
                   color = '#FEB51E'
@@ -131,13 +131,13 @@ export default class ButtonThemeExample extends Component {
 const styles = StyleSheet.create({
   messageText: {
     fontSize: 36,
-    color: 'rgb(42,42,42)',
+    color: '#D4D4D4',
     textAlign: 'center',
-    width: 330,
-    left: 23,
-    top: 80,
+    //width: 330,
+    //left: 23,
+    top: 40,
   },
   formContainer: {
-    top: 110
+    top: 160
   },
 });
