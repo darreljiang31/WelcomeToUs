@@ -88,25 +88,25 @@ const styles = StyleSheet.create({
   button1: {
     height: 80,
     width:'100%',
-    top: -20,
+    top: -70,
     backgroundColor: '#0e0e0e',
   },
   button2: {
     height: 80,
     width:'100%',
-    top: 10,
+    top: -40,
     backgroundColor: '#0e0e0e',
   },
   button3: {
     height: 80,
     width:'100%',
-    top: 50,
+    top: -10,
     backgroundColor: '#0e0e0e',
   },
   button4: {
     height: 90,
     width:'100%',
-    top: 90,
+    top: 10,
     backgroundColor: '#0e0e0e',
   },
 });
