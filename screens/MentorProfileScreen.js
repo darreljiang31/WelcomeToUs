@@ -31,7 +31,7 @@ export default class MentorProfileExample extends Component {
   }
 
   render() {
-    const profilePic = 'https://facebook.github.io/react-native/docs/assets/favicon.png';
+    const profilePic = '../assets/images/dentist1.jpeg';
     return (
       <Container>
           <Content>
