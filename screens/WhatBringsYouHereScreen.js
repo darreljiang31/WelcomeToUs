@@ -109,7 +109,7 @@ export default class ButtonThemeExample extends Component {
               </ListItem>
             <DoubleButton
               text1="Continue"
-              handleClick={() => this.props.navigation.navigate('Bio')}
+              handleClick={() => this.props.navigation.navigate('UploadPhoto')}
             />
             </Container>
           </Content>

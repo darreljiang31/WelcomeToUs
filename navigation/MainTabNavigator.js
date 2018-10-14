@@ -7,6 +7,7 @@ import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen';
 import LanguageSelectionScreen from '../screens/LanguageSelectionScreen';
 import NumberOfChildrenScreen from '../screens/NumberOfChildrenScreen';
 import BioScreen from '../screens/BioScreen'
+import UploadPhotoScreen from '../screens/UploadPhotoScreen'
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
@@ -44,6 +45,7 @@ const HomeStack = createStackNavigator({
   WhatBringsYouHere: WhatBringsYouHereScreen,
   NumberOfChildren:NumberOfChildrenScreen,
   Bio: BioScreen,
+  UploadPhoto: UploadPhotoScreen,
 });
 
 HomeStack.navigationOptions = {
