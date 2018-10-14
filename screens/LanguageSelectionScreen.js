@@ -36,7 +36,7 @@ export default class CardListExample extends Component {
           <Card style={{padding: 30}}>
             <CardItem button onPress={() =>{
               this.setState({language: "English"})
-              this.props.navigation.navigate('Hello')
+              this.props.navigation.navigate('WeNeedToGetToKnowYou')
               }}>
               <Text>Hello</Text>
               <Right>
@@ -45,7 +45,7 @@ export default class CardListExample extends Component {
              </CardItem>
              <CardItem button onPress={() =>{
                 this.setState({language: "French"})
-                this.props.navigation.navigate('Hello')
+                this.props.navigation.navigate('WeNeedToGetToKnowYou')
              }}>
               <Text>Bonjour</Text>
               <Right>
@@ -54,7 +54,7 @@ export default class CardListExample extends Component {
              </CardItem>
              <CardItem button onPress={() =>{
                this.setState({language: "Spanish"})
-               this.props.navigation.navigate('Hello')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou')
              }}>
               <Text>Hola</Text>
               <Right>
@@ -63,7 +63,7 @@ export default class CardListExample extends Component {
              </CardItem>
              <CardItem button onPress={() =>{
                this.setState({language: "Sanskrit"})
-               this.props.navigation.navigate('Hello')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou')
              }}>
               <Text>Namaste</Text>
               <Right>
@@ -72,7 +72,7 @@ export default class CardListExample extends Component {
              </CardItem>
              <CardItem button onPress={() =>{
                this.setState({language: "Italian"})
-               this.props.navigation.navigate('Hello')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou')
              }}>
               <Text>Ciao</Text>
               <Right>
