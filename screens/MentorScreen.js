@@ -63,32 +63,32 @@ const ENTRIES1 = [
   {
       title: 'Carla Zara',
       subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-      illustration: 'https://i.imgur.com/UYiroysl.jpg'
+      illustration: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Earlier this morning, NYC',
       subtitle: 'Lorem ipsum dolor sit amet',
-      illustration: 'https://i.imgur.com/UPrs1EWl.jpg'
+      illustration: 'https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'White Pocket Sunset',
       subtitle: 'Lorem ipsum dolor sit amet et nuncat ',
-      illustration: 'https://i.imgur.com/MABUbpDl.jpg'
+      illustration: 'https://images.pexels.com/photos/462680/pexels-photo-462680.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Acrocorinth, Greece',
       subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-      illustration: 'https://i.imgur.com/KZsmUi2l.jpg'
+      illustration: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'The lone tree, majestic landscape of New Zealand',
       subtitle: 'Lorem ipsum dolor sit amet',
-      illustration: 'https://i.imgur.com/2nCt3Sbl.jpg'
+      illustration: 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d7ef5a79190207ccb44c7c2e101e13ed&auto=format&fit=crop&w=750&q=80%20750w'
   },
   {
       title: 'Middle Earth, Germany',
       subtitle: 'Lorem ipsum dolor sit amet',
-      illustration: 'https://i.imgur.com/lceHsT6l.jpg'
+      illustration: 'https://images.unsplash.com/photo-1529932260967-af9d3bbd8138?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b3e872d900875102bc21577a8f6f1345&auto=format&fit=crop&w=334&q=80 334w'
   }
 ];
 
