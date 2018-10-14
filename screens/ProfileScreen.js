@@ -14,7 +14,9 @@ import {
   Text,
   Thumbnail,
   Textarea,
+  View,
 } from 'native-base';
+import DoubleButton from './DoubleButton';
 
 export default class MentorProfileExample extends Component {
 
@@ -32,14 +34,20 @@ export default class MentorProfileExample extends Component {
 
   render() {
     return (
-      <Container>
-          <Content>
-            <Text style={{alignSelf: 'flex-end'}}>5*</Text>
+      <Container style={{backgroundColor: "#222222"}}>
+        <Content style={{paddingTop: 50}}>
+        <Text style={{alignSelf: 'flex-end', color:'#D4D4D4', fontSize: 30}}>✰✰✰✰</Text>
             <Thumbnail style={styles.thumbNail} large source={require('../constants/Shape3x.png')} />
             <Text style={styles.NameText}>Jackie Chan </Text>
             <Text style={styles.bioText}>Ninja</Text>
             <Text style={styles.bioText}>Originally from Hong Kong, China </Text>
             <Text style={styles.bioText}>Lives in St. Charles, MO </Text>
+            <View style={{top: 110}}>
+              <DoubleButton
+                text1='Edit Profile'
+                handleClick={() => this.props.navigation.navigate("LanguageSelection")}
+              />
+            </View>
             <Text></Text>
           </Content>
       </Container>
@@ -51,16 +59,16 @@ const styles = StyleSheet.create({
   NameText: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: 'rgb(42,42,42)',
+    color: '#D4D4D4',
     textAlign: 'center',
     width: 330,
     height: 93,
     left: 23,
-    top: 80,
+    top: 40,
   },
   bioText: {
     fontSize: 24,
-    color: 'rgb(42,42,42)',
+    color: '#D4D4D4',
     textAlign: 'left',
     width: 330,
     height: 93,

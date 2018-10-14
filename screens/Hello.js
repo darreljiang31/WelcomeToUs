@@ -27,6 +27,7 @@ export default class ButtonThemeExample extends Component {
               <Input
                 onChangeText={(name) => this.setState({name})}
                 value={this.state.name}
+                style={{color:'#D4D4D4'}}
               />
             </Item>
           </Form>

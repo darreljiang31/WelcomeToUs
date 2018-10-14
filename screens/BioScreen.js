@@ -49,6 +49,7 @@ export default class ButtonThemeExample extends Component {
               <Input
                 onChangeText={(bio) => this.setState({bio})}
                 value={this.state.bio}
+                style={{color:'#D4D4D4'}}
               />
             </Item>
           </Form>
