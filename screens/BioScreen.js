@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TextInput, View } from 'react-native';
 import {
   Body,
   Button,
@@ -13,7 +13,8 @@ import {
   Text,
 } from 'native-base';
 import * as Progress from 'react-native-progress';
-import ProgressStatus from './ProgressStatus'
+import ProgressStatus from './ProgressStatus';
+import DoubleButoon from './DoubleButton';
 
 export default class ButtonThemeExample extends Component {
 
@@ -37,9 +38,31 @@ export default class ButtonThemeExample extends Component {
             <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
             <Progress.Bar progress={.5} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> Tell us a little about yourself. </Text>
-            <InputGroup style={styles.inputBox} borderType="regular">
-              <Input />
-            </InputGroup>
+            {/* <InputGroup style={styles.inputBox} borderType="regular"> */}
+
+              <TextInput
+              style={{
+                marginTop: 100,
+                backgroundColor: this.state.text,
+                borderColor: '#000000',
+                borderWidth: 1,
+              width:300,
+              height:250,
+              alignSelf: 'center' }}
+                      editable={true}
+                       numberOfLines = {10}
+                       onChangeText={(bio) => this.setState({bio})}
+                       value={this.state.bio}
+                       maxLength = {70}
+              />
+            {/* </InputGroup> */}
+            <Text style={{
+              alignSelf: 'center',
+              marginTop: 25,
+              marginBottom: 50,
+            }}> WHY DO WE ASK? </Text>
+
+            <DoubleButoon text1={"DONE"}/>
           </Content>
       </Container>
     );
