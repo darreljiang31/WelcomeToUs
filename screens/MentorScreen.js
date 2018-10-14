@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Button, Icon, Text } from 'native-base';
 import Carousel from 'react-native-snap-carousel';
 import { StyleSheet, Dimensions, Platform, View  } from 'react-native'
-import SliderEntry from '../utils/SliderEntry'
+import SliderEntry from './SliderEntry'
 
 export default class MentorScreen extends Component {
+  static navigationOptions = {
+    title: 'Mentors',
+  };
+
   _renderItem ({item, index}) {
     return (
         <View style={styles.slide}>

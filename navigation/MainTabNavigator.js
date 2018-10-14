@@ -18,6 +18,7 @@ import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
 import MentorScreen from '../screens/MentorScreen';
 import MentorProfileScreen from '../screens/MentorProfileScreen';
+import SlideEntryScreen from '../screens/SliderEntry'
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -48,6 +49,7 @@ const HomeStack = createStackNavigator({
   Bio: BioScreen,
   UploadPhoto: UploadPhotoScreen,
   WeNeedToGetToKnowYou: WeNeedToGetToKnowYouScreen,
+  Slide: SlideEntryScreen
 });
 
 HomeStack.navigationOptions = {
