@@ -8,17 +8,17 @@ export default (props) => {
   const handleClick = props.handleClick
   const handleClick2 = props.handleClick2
     return (
-      <Container>
+      <Container style={{backgroundColor: "#222222"}}>
         <Content >
           <Button
-            style={{ backgroundColor:'#9b1ce0', width: '80%', alignSelf: 'center', justifyContent:'center'}}
+            style={{ backgroundColor:'#FEB51E', width: '80%', alignSelf: 'center', justifyContent:'center'}}
             onPress={props.handleClick}
-          ><Text>{text1}</Text></Button>
+          ><Text style={{color:'#222222'}}>{text1}</Text></Button>
           { props.text2 ?
             <Button
-              style={{ marginTop:35, backgroundColor:'#9b1ce0', width: '80%', alignSelf: 'center', justifyContent:'center'}}
+              style={{ marginTop:35, backgroundColor:'#FEB51E', width: '80%', alignSelf: 'center', justifyContent:'center'}}
               onPress={props.handleClick2}
-              ><Text>{text2}</Text></Button>: null}
+              ><Text style={{color:'#222222'}}>{text2}</Text></Button>: null}
         </Content>
       </Container>
     );

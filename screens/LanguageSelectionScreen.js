@@ -31,10 +31,10 @@ export default class CardListExample extends Component {
       <Container style={{backgroundColor: "#222222"}}>
         <Content style={{paddingTop: 150}}>
             <CardItem
-              style={{alignSelf: 'center', marginBottom: 25, width: 300, backgroundColor: 'rgba(0,0,0,0.0)', borderBottomWidth: 2, borderBottomColor: '#FEB51E'}}
+              style={{alignSelf: 'center', marginBottom: 25, width: 300, backgroundColor: "#222222", borderBottomWidth: 2, borderBottomColor: '#FEB51E'}}
               button onPress={() =>{
               this.setState({language: "English"})
-              this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "English"})
+              this.props.navigation.navigate('Hello', {language: "English"})
               }}>
               <Icon name='ios-checkmark' style={{ fontSize: 60, color:'#D4D4D4', fontWeight: 'bold', marginBottom: -20}}/>
               <Text style={{alignSelf: 'center', fontSize: 36, textAlign: 'center', paddingLeft: 31, color:'#D4D4D4', fontWeight: 'bold', marginBottom: -20}}>
@@ -44,7 +44,7 @@ export default class CardListExample extends Component {
                 style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
                 button onPress={() =>{
                 this.setState({language: "French"})
-                this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "French"})
+                this.props.navigation.navigate('Hello', {language: "French"})
              }}>
               <Text style={{fontSize: 36, color: '#D4D4D4'}}>Bonjour</Text>
              >
@@ -53,7 +53,7 @@ export default class CardListExample extends Component {
                style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
                button onPress={() =>{
                this.setState({language: "Spanish"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Spanish"})
+               this.props.navigation.navigate('Hello', {language: "Spanish"})
              }}>
               <Text style={{fontSize: 36, color: '#D4D4D4'}}>Hola</Text>
 
@@ -62,7 +62,7 @@ export default class CardListExample extends Component {
                style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
                button onPress={() =>{
                this.setState({language: "Sanskrit"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Sanskrit"})
+               this.props.navigation.navigate('Hello', {language: "Sanskrit"})
              }}>
               <Text style={{fontSize: 36, color: '#D4D4D4'}}>Namaste</Text>
 
@@ -71,7 +71,7 @@ export default class CardListExample extends Component {
                style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
                button onPress={() =>{
                this.setState({language: "Italian"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Italian"})
+               this.props.navigation.navigate('Hello', {language: "Italian"})
              }}>
               <Text style={{fontSize: 36, color: '#D4D4D4'}}>Ciao</Text>
 

@@ -3,7 +3,6 @@ import { Container, Header, Content, Button, Icon, Text } from 'native-base';
 import { StyleSheet, View } from 'react-native'
 export default class MainScreen extends Component {
   static navigationOptions = {
-    title: 'What do I need?',
   };
 
   render() {

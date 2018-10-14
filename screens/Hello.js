@@ -15,16 +15,15 @@ export default class ButtonThemeExample extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <Container >
-        <Header />
-        <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
+      <Container style={{backgroundColor: "#222222"}}>
+        <Content style={{paddingTop: 50}}>
+        <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
         <Progress.Bar progress={0} width={300} style={{alignSelf: 'center'}} />
-        <Content>
           <Text style={styles.text}>Hello! What's your name?</Text>
 
           <Form style={styles.input}>
             <Item >
-              <Label>Name</Label>
+              <Label style={{color: '#D4D4D4'}}>Name</Label>
               <Input
                 onChangeText={(name) => this.setState({name})}
                 value={this.state.name}
@@ -36,7 +35,7 @@ export default class ButtonThemeExample extends Component {
         </Content>
           <DoubleButton
             style={{top: 80}}
-            text1="Continue"
+            text1="CONTINUE"
             handleClick={() => this.props.navigation.navigate('WhereDoYouLive', {name: this.state.name})}
           />
       </Container>
@@ -48,15 +47,16 @@ export default class ButtonThemeExample extends Component {
 const styles = StyleSheet.create({
   text: {
     position: 'absolute',
-    top: 30,
+    top: 50,
     height: 29,
     width: '100%',
     textAlign: 'center',
-    fontSize:18
+    fontSize:25,
+    color:'#D4D4D4'
   },
   input: {
     position: 'absolute',
-    top: 70,
+    top: 100,
     height: 29,
     width:'100%',
   },

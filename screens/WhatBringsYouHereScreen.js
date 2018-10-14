@@ -115,7 +115,7 @@ export default class ButtonThemeExample extends Component {
                 </Body>
               </ListItem>
                 <DoubleButton
-                  text1="Continue"
+                  text1="CONTINUE"
                   handleClick={() => this.props.navigation.navigate('UploadPhoto')}
                 />
             </Container>

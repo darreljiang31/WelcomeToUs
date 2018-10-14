@@ -1,31 +1,36 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Item, Input, Title, Text, Icon } from 'native-base';
+import { Container, Header, Content, Item, Input, Title, Text, Icon, View } from 'native-base';
 import {Image} from 'react-native'
 import DoubleButton from './DoubleButton'
-import ProgressStatus from './ProgressStatus'
+import * as Progress from 'react-native-progress';
+import ProgressStatus from './ProgressStatus';
 
 export default class UploadPhotoScreen extends Component {
 
   render(){
     const { navigate } = this.props.navigation;
     return (
-      <Container>
+      <Container style={{backgroundColor: "#222222"}}>
+      <Content style={{paddingTop: 50}}>
+        {/* <ProgressStatus progressPercentage={0.6} /> */}
+        <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
+        <Progress.Bar progress={0.2} width={300} style={{alignSelf: 'center'}} />
 
-      <Header />
-      <ProgressStatus progressPercentage={0.6}/>
+        {/* <Content> */}
+        <Text style={{fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light', backgroundColor: "#222222", top: 20}}> Upload your photo! </Text>
+        {/* <Icon> */}
+          <Image style={{alignSelf: 'center', backgroundColor: "#222222", top: 20, color:'#D4D4D4'}} source={require('../constants/baseline_account_circle_black_48pt_3x.png')}/>
+        {/* </Content> */}
+        <View style={{top: 20}}>
+          <DoubleButton
+            text1="UPLOAD"
+            text2="CONTINUE"
+            handleClick2={() => this.props.navigation.navigate('Bio')}
+          />
+        </View>
+      </Content>
 
-      {/* <Content> */}
-      <Text style={{ marginTop: -400, fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light'}}> Upload your photo! </Text>
-      {/* <Icon> */}
-        <Image style={{alignSelf: 'center'}} source={require('../constants/baseline_account_circle_black_48pt_3x.png')}/>
-      {/* </Content> */}
-  <DoubleButton
-    text1="UPLOAD"
-    text2="Continue"
-    handleClick2={() => this.props.navigation.navigate('Bio')}
-  />
       </Container>
-    )
+    );
   }
-
 }
