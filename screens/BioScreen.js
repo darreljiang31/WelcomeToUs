@@ -6,7 +6,10 @@ import {
   CheckBox,
   Container,
   Content,
+  Form,
   Header,
+  Item,
+  Label,
   ListItem,
   InputGroup,
   Input,
@@ -33,34 +36,28 @@ export default class ButtonThemeExample extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <Container>
-        <Header />
-          <Content>
-            <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
+      <Container style={{backgroundColor: "#222222"}}>
+          <Content style={{paddingTop: 50}}>
+            <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
             <Progress.Bar progress={0.8} width={300} style={{alignSelf: 'center'}} color='rgba(232, 36, 70, 1)' />
             <Text style={styles.messageText}> Tell us a little about yourself. </Text>
             {/* <InputGroup style={styles.inputBox} borderType="regular"> */}
 
-              <TextInput
-              style={{
-                marginTop: 100,
-                backgroundColor: this.state.text,
-                borderColor: '#000000',
-                borderWidth: 1,
-              width:300,
-              height:250,
-              alignSelf: 'center' }}
-                      editable={true}
-                       numberOfLines = {10}
-                       onChangeText={(bio) => this.setState({bio})}
-                       value={this.state.bio}
-                       maxLength = {70}
+            <Form style={{marginTop: 100}}>
+            <Item >
+              <Label>Type Bio...</Label>
+              <Input
+                onChangeText={(bio) => this.setState({bio})}
+                value={this.state.bio}
               />
-            {/* </InputGroup> */}
+            </Item>
+          </Form>
+
             <Text style={{
               alignSelf: 'center',
-              marginTop: 25,
+              marginTop: 50,
               marginBottom: 50,
+              color:'#D4D4D4'
             }}> WHY DO WE ASK? </Text>
 
             <DoubleButoon
@@ -76,7 +73,7 @@ export default class ButtonThemeExample extends Component {
 const styles = StyleSheet.create({
   messageText: {
     fontSize: 36,
-    color: 'rgb(42,42,42)',
+    color: '#D4D4D4',
     textAlign: 'center',
     width: 330,
     height: 93,
