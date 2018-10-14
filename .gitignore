@@ -3,3 +3,4 @@ node_modules/**/*
 ios/*
 run/.expo
 npm-debug.log.1417204855
+package-lock.json

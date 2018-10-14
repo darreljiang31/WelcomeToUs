@@ -2,7 +2,7 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
-import LanguageSelectionScreen from '../screens/LanguageSelectionScreen'
+import WhereDoYouLiveScreen from '../screens/WhereDoYouLiveScreen'
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
@@ -11,6 +11,7 @@ import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
 import MentorScreen from '../screens/MentorScreen';
+import MentorProfileScreen from '../screens/MentorProfileScreen';
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -50,8 +51,12 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LanguageSelectionStack = createStackNavigator({
-  LanguageSelection: LanguageSelectionScreen,
+const WhereDoYouLiveStack = createStackNavigator({
+  WhereDoYouLive: WhereDoYouLiveScreen,
+})
+
+const MentorProfileStack = createStackNavigator({
+  Profile: MentorProfileScreen,
 })
 
 const LinksStack = createStackNavigator({
@@ -83,7 +88,9 @@ SettingsStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
-  LanguageSelectionStack,
+  WhereDoYouLiveStack,
+  MentorProfileStack,
+  BioStack,
   HomeStack,
   LinksStack,
   SettingsStack,
