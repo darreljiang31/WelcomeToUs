@@ -43,6 +43,7 @@ ProfileStack.navigationOptions = {
 const HomeStack = createStackNavigator({
   Main: MainScreen,
   Mentor: MentorScreen,
+  MentorProfile: MentorProfileScreen,
   Hello: HelloScreen,
   WhereDoYouLive: WhereDoYouLiveScreen,
   WhatBringsYouHere: WhatBringsYouHereScreen,

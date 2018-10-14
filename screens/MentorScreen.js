@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Button, Icon, Text, List, ListItem, Left, Thumbnail, Body, Right } from 'native-base';
+import { Container, Header, Content, Button, Icon, Text, List, ListItem, Left, Thumbnail, Body, Right, Card } from 'native-base';
 import Carousel from 'react-native-snap-carousel';
 import { StyleSheet, Dimensions, Platform, View  } from 'react-native'
 import SliderEntry from './SliderEntry'
@@ -29,11 +29,15 @@ export default class MentorScreen extends Component {
 }
 
   render() {
-
+    const { navigate } = this.props.navigation;
     return (
-      <Container>
-        <Header />
-        <Content>
+      <Container style={{backgroundColor: "#222222"}}>
+      <Header style={{backgroundColor: "#222222", borderBottomWidth: 0}}>
+       <Button primary style={{backgroundColor:'#FEB51E', width: 150, alignSelf: 'center', justifyContent:'center'}} onPress={() => this.props.navigation.navigate('MentorProfile')}>
+       <Text style={{color:'#222222'}}>View Profile</Text>
+       </Button>
+      </Header>
+        <Content style={{paddingTop: 50}}>
           {console.log(this._renderItem)}
           <Carousel
               ref={(c) => { this._carousel = c; }}
@@ -42,8 +46,7 @@ export default class MentorScreen extends Component {
               sliderWidth={sliderWidth}
               itemWidth={itemWidth}
           />
-
-          <List>
+          <List style={{backgroundColor: '#D4D4D4'}}>
             <ListItem thumbnail>
               <Left>
                 <Thumbnail square source={{ uri: 'http://footage.framepool.com/shotimg/qf/792533153-chin-finger-well-dressed-thinking.jpg' }} />
@@ -54,7 +57,7 @@ export default class MentorScreen extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text>View</Text>
+                  <Text style={{color: '#E82446'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -68,7 +71,7 @@ export default class MentorScreen extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text>View</Text>
+                  <Text style={{color: '#E82446'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -82,7 +85,7 @@ export default class MentorScreen extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text>View</Text>
+                  <Text style={{color: '#E82446'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -96,7 +99,7 @@ export default class MentorScreen extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text>View</Text>
+                  <Text style={{color: '#E82446'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -110,7 +113,7 @@ export default class MentorScreen extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text>View</Text>
+                   <Text style={{color: '#E82446'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -139,32 +142,32 @@ export const itemWidth = slideWidth + itemHorizontalMargin * 2;
 const ENTRIES1 = [
   {
       title: 'Carla Zara',
-      subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+      subtitle: 'Highly skilled at professional recommendations',
       illustration: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Penelope Cruz',
-      subtitle: 'Lorem ipsum dolor sit amet',
+      subtitle: 'Has similar values as those in your profile',
       illustration: 'https://images.pexels.com/photos/712521/pexels-photo-712521.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Amari Zane',
-      subtitle: 'Lorem ipsum dolor sit amet et nuncat ',
+      subtitle: 'Leader in religious circles',
       illustration: 'https://images.pexels.com/photos/462680/pexels-photo-462680.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Brady Smith',
-      subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
+      subtitle: 'Excited to help individuals of all backgrounds',
       illustration: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
   },
   {
       title: 'Juan Lopez',
-      subtitle: 'Lorem ipsum dolor sit amet',
+      subtitle: 'Less than 10 miles from your location',
       illustration: 'https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d7ef5a79190207ccb44c7c2e101e13ed&auto=format&fit=crop&w=750&q=80%20750w'
   },
   {
-      title: 'Middle Earth, Germany',
-      subtitle: 'Lorem ipsum dolor sit amet',
+      title: 'Jess Valencia',
+      subtitle: 'Enthusiastic about spreading unique culture',
       illustration: 'https://images.unsplash.com/photo-1529932260967-af9d3bbd8138?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b3e872d900875102bc21577a8f6f1345&auto=format&fit=crop&w=334&q=80 334w'
   }
 ];

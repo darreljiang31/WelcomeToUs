@@ -3,7 +3,6 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import { ParallaxImage } from 'react-native-snap-carousel';
 import styles from '../utils/SliderEntry.style';
-import { Navigation } from 'react-navigation';
 
 export default class SliderEntry extends Component {
 
@@ -36,6 +35,7 @@ export default class SliderEntry extends Component {
     }
 
     render () {
+
         const { data: { title, subtitle }, even } = this.props;
 
         const uppercaseTitle = title ? (
@@ -51,7 +51,6 @@ export default class SliderEntry extends Component {
             <TouchableOpacity
               activeOpacity={1}
               style={styles.slideInnerContainer}
-              onPress={() => { alert(`You've clicked '${title}'`); }}
               >
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>

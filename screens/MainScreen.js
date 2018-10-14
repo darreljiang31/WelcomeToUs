@@ -6,7 +6,6 @@ export default class MainScreen extends Component {
   };
 
   render() {
-    const { navigate } = this.props.navigation;
     return (
       <Container style={{backgroundColor: "#222222"}}>
         <Content style={{paddingTop: 150}}>
@@ -36,6 +35,7 @@ export default class MainScreen extends Component {
           <CardItem
             style={styles.button2}
             button
+            onPress={() => this.props.navigation.navigate('Mentor')}
           >
           <View style={{width: 60, height: 50, marginRight: 30, borderRightWidth: 1, borderRightColor: '#FEB51E'}}>
            <Image style={{height: 55, width: 55, left: -5, top: -5}} source={require('../constants/train_icon1x.png')}/>
@@ -48,6 +48,7 @@ export default class MainScreen extends Component {
           <CardItem
             style={styles.button3}
             button
+            onPress={() => this.props.navigation.navigate('Mentor')}
           >
           <View style={{width: 60, height: 50, marginRight: 30, borderRightWidth: 1, borderRightColor: '#FEB51E'}}>
            <Image style={{height: 55, width: 55, left: -5, top: -7}} source={require('../constants/employment1x.png')}/>
@@ -60,6 +61,7 @@ export default class MainScreen extends Component {
           <CardItem
             style={styles.button4}
             button
+            onPress={() => this.props.navigation.navigate('Mentor')}
           >
           <View style={{width: 60, height: 50, marginRight: 30, borderRightWidth: 1, borderRightColor: '#FEB51E'}}>
              <Image style={{height: 75, width: 55, left: -5, top: -10}} source={require('../constants/Passport1x.png')}/>
