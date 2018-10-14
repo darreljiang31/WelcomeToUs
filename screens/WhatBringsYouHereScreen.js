@@ -38,74 +38,80 @@ export default class ButtonThemeExample extends Component {
   render() {
     const { navigate } = this.props;
     return (
-      <Container>
-        <Header />
-          <Content>
-            <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
+      <Container style={{backgroundColor: "#222222"}}>
+          <Content style={{padding: 50}}>
+            <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
             <Progress.Bar progress={0.4} width={300} style={{alignSelf: 'center'}} />
             <Text style={styles.messageText}> What's bringing you here? </Text>
-            <Container style={styles.formContainer}>
+            <Container style={styles.formContainer} style={{backgroundColor: "#222222"}}>
               <ListItem>
                 <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.workChecked ? this.state.workChecked : false}
                   onPress={() => this.setState({workChecked: this.toggleChecked(this.state.workChecked)})}
                 />
                 <Body>
-                  <Text>Work/Employment</Text>
+                  <Text style={{color:'#D4D4D4'}}>Work/Employment</Text>
                 </Body>
               </ListItem>
               <ListItem>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.universityChecked ? this.state.universityChecked : false}
                   onPress={() => this.setState({universityChecked: this.toggleChecked(this.state.universityChecked)})}
                 />
                 <Body>
-                  <Text>University/Employment</Text>
+                  <Text style={{color:'#D4D4D4'}}>University/Employment</Text>
                 </Body>
               </ListItem>
               <ListItem>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.kidEducationChecked ? this.state.kidEducationChecked : false}
                   onPress={() => this.setState({kidEducationChecked: this.toggleChecked(this.state.kidEducationChecked)})}
                 />
                 <Body>
-                  <Text>My Kid's Education</Text>
+                  <Text style={{color:'#D4D4D4'}}>My Kid's Education</Text>
                 </Body>
               </ListItem>
               <ListItem>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.healthcareChecked ? this.state.healthcareChecked : false}
                   onPress={() => this.setState({healthcareChecked: this.toggleChecked(this.state.healthcareChecked)})}
                 />
                 <Body>
-                  <Text>Healthcare</Text>
+                  <Text style={{color:'#D4D4D4'}} >Healthcare</Text>
                 </Body>
               </ListItem>
               <ListItem>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.familyChecked ? this.state.familyChecked : false}
                   onPress={() => this.setState({familyChecked: this.toggleChecked(this.state.familyChecked)})}
                 />
                 <Body>
-                  <Text>Family Lives Here</Text>
+                  <Text style={{color:'#D4D4D4'}} >Family Lives Here</Text>
                 </Body>
               </ListItem>
               <ListItem>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.foodChecked ? this.state.foodChecked : false}
                   onPress={() => this.setState({foodChecked: this.toggleChecked(this.state.foodChecked)})}
                 />
                 <Body>
-                  <Text>The Food!</Text>
+                  <Text style={{color:'#D4D4D4'}}>The Food!</Text>
                 </Body>
               </ListItem>
               <ListItem style={{marginBottom: 20}}>
               <CheckBox
+                  color = '#FEB51E'
                   checked={this.state.beerChecked ? this.state.beerChecked : false}
                   onPress={() => this.setState({beerChecked: this.toggleChecked(this.state.beerChecked)})}
                 />
                 <Body>
-                  <Text>The Beer!</Text>
+                  <Text style={{color:'#D4D4D4'}}>The Beer!</Text>
                 </Body>
               </ListItem>
                 <DoubleButton
