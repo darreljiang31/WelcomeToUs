@@ -36,7 +36,7 @@ export default class ButtonThemeExample extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation;
+    const { navigate } = this.props;
     return (
       <Container>
         <Header />
@@ -99,7 +99,7 @@ export default class ButtonThemeExample extends Component {
                   <Text>The Food!</Text>
                 </Body>
               </ListItem>
-              <ListItem>
+              <ListItem style={{marginBottom: 20}}>
               <CheckBox
                   checked={this.state.beerChecked ? this.state.beerChecked : false}
                   onPress={() => this.setState({beerChecked: this.toggleChecked(this.state.beerChecked)})}
@@ -108,7 +108,6 @@ export default class ButtonThemeExample extends Component {
                   <Text>The Beer!</Text>
                 </Body>
               </ListItem>
-
                 <DoubleButton
                   text1="Continue"
                   handleClick={() => this.props.navigation.navigate('UploadPhoto')}
@@ -133,7 +132,6 @@ const styles = StyleSheet.create({
     top: 80,
   },
   formContainer: {
-    left: 41,
-    top: 110,
+    top: 110
   },
 });
