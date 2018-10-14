@@ -2,7 +2,12 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
-import WhereDoYouLiveScreen from '../screens/WhereDoYouLiveScreen'
+import WhereDoYouLiveScreen from '../screens/WhereDoYouLiveScreen';
+import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen';
+import LanguageSelectionScreen from '../screens/LanguageSelectionScreen';
+import NumberOfChildrenScreen from '../screens/NumberOfChildrenScreen';
+import BioScreen from '../screens/BioScreen'
+import UploadPhotoScreen from '../screens/UploadPhotoScreen'
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
@@ -35,6 +40,12 @@ ButtonStack.navigationOptions = {
 const HomeStack = createStackNavigator({
   Main: MainScreen,
   Mentor: MentorScreen,
+  Hello: HelloScreen,
+  WhereDoYouLive: WhereDoYouLiveScreen,
+  WhatBringsYouHere: WhatBringsYouHereScreen,
+  NumberOfChildren:NumberOfChildrenScreen,
+  Bio: BioScreen,
+  UploadPhoto: UploadPhotoScreen,
 });
 
 HomeStack.navigationOptions = {
@@ -63,6 +74,10 @@ const LinksStack = createStackNavigator({
   Links: LinksScreen,
 });
 
+const LanguageSelectionStack = createStackNavigator({
+  LanguageSelectionScreen: LanguageSelectionScreen,
+})
+
 LinksStack.navigationOptions = {
   tabBarLabel: 'Links',
   tabBarIcon: ({ focused }) => (
@@ -88,9 +103,8 @@ SettingsStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
-  WhereDoYouLiveStack,
+  LanguageSelectionStack,
   MentorProfileStack,
-  BioStack,
   HomeStack,
   LinksStack,
   SettingsStack,

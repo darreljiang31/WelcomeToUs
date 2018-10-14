@@ -17,6 +17,7 @@ import * as Progress from 'react-native-progress';
 import ProgressStatus from './ProgressStatus';
 import DoubleButton from './DoubleButton';
 
+
 export default class ButtonThemeExample extends Component {
 
   constructor(props) {
@@ -29,6 +30,7 @@ export default class ButtonThemeExample extends Component {
   }
 
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <Container >
         <Header />
@@ -55,7 +57,10 @@ export default class ButtonThemeExample extends Component {
                   />
               </InputGroup>
               </Container>
-             <DoubleButton text1="Continue" />
+             <DoubleButton
+              text1="Continue"
+              handleClick={() => navigate('WhatBringsYouHere')}
+             />
             </Container>
         </Content>
       </Container>

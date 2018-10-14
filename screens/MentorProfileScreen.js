@@ -31,12 +31,11 @@ export default class MentorProfileExample extends Component {
   }
 
   render() {
-    const profilePic = 'https://facebook.github.io/react-native/docs/assets/favicon.png';
     return (
       <Container>
           <Content>
             <Text style={{alignSelf: 'flex-end'}}>5*</Text>
-            <Thumbnail style={styles.thumbNail} large source={{uri: profilePic}} />
+            <Thumbnail style={styles.thumbNail} large source={require('../assets/images/dentist1.jpeg')} />
             <Text style={styles.NameText}> Carla Zara, DDS </Text>
             <Text style={styles.bioText}> Dentist</Text>
             <Text style={styles.bioText}> Originally from Mexico City, Mexico </Text>
