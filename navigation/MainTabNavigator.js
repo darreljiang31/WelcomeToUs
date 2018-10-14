@@ -1,7 +1,9 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
-
+import {
+Label
+} from 'native-base';
 import WhereDoYouLiveScreen from '../screens/WhereDoYouLiveScreen';
 import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen';
 import LanguageSelectionScreen from '../screens/LanguageSelectionScreen';
@@ -27,7 +29,7 @@ const ProfileStack = createStackNavigator({
 })
 
 ProfileStack.navigationOptions = {
-  tabBarLabel: 'Profile',
+  tabBarLabel: <Label style={{color:'#202227'}}>Profile</Label>,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -60,7 +62,7 @@ const HomeStack = createStackNavigator({
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Main Menu',
+  tabBarLabel: <Label style={{color:'#202227'}}>Main Menu</Label>,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -82,7 +84,7 @@ const MentorProfileStack = createStackNavigator({
 })
 
 MentorProfileStack .navigationOptions = {
-  tabBarLabel: 'My Peers',
+  tabBarLabel: <Label style={{color:'#202227'}}>My Peers</Label>,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -100,7 +102,7 @@ const LanguageSelectionStack = createStackNavigator({
 })
 
 LanguageSelectionStack.navigationOptions = {
-  tabBarLabel: 'Map',
+  tabBarLabel: () => (<Label style={{color:'#202226'}}>Map</Label>) ,
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
