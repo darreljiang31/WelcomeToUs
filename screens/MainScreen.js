@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Button, Icon, Text } from 'native-base';
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 export default class MainScreen extends Component {
+  static navigationOptions = {
+    title: 'What do I need?',
+  };
 
   render() {
     const { navigate } = this.props.navigation;
@@ -9,19 +12,19 @@ export default class MainScreen extends Component {
       <Container>
         <Header />
         <Content>
-          <Button style={styles.button1} iconLeft
+          <Button primary style={styles.button1} iconLeft
             onPress={() => this.props.navigation.navigate('Mentor')}
           >
-            <Icon name='home' />
-            <Text>Housing</Text>
+            <Icon name='home' style={{fontSize: 40}}/>
+            <Text style={{fontSize: 30}}>Housing</Text>
           </Button>
-          <Button style={styles.button2} iconLeft>
-            <Icon name='home' />
-            <Text>Pub</Text>
+          <Button success style={styles.button2} iconLeft>
+            <Icon name='train' style={{fontSize: 40}}/>
+            <Text style={{fontSize: 30}}>Transportation</Text>
           </Button>
-          <Button style={styles.button3} iconLeft>
-            <Icon name='home' />
-            <Text>Settings</Text>
+          <Button warning style={styles.button3} iconLeft>
+            <Icon name='train' style={{fontSize: 40}}/>
+            <Text style={{fontSize: 30}}>Money</Text>
           </Button>
         </Content>
       </Container>
@@ -38,21 +41,18 @@ onPress={() =>
 
 const styles = StyleSheet.create({
   button1: {
-    height: 100,
-    position: 'absolute',
-    width:'80%',
+    height: 80,
+    width:'100%',
   },
   button2: {
-    height: 100,
-    position: 'absolute',
-    width:'80%',
-    top:150
+    height: 80,
+    width:'100%',
+    top:50
   },
   button3: {
-    height: 100,
-    position: 'absolute',
-    width:'80%',
-    top:300
+    height: 80,
+    width:'100%',
+    top:100
   },
 });
 

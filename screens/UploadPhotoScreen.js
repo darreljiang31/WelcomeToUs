@@ -15,7 +15,7 @@ export default class UploadPhotoScreen extends Component {
       <ProgressStatus progressPercentage={0.6}/>
 
       {/* <Content> */}
-      <Text style={{fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light'}}> Upload your photo! </Text>
+      <Text style={{ marginTop: -400, fontSize: 35, alignSelf:'center',  fontFamily: 'HelveticaNeue-Light'}}> Upload your photo! </Text>
       {/* <Icon> */}
         <Image style={{alignSelf: 'center'}} source={require('../constants/baseline_account_circle_black_48pt_3x.png')}/>
       {/* </Content> */}

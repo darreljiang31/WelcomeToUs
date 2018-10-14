@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import { ParallaxImage } from 'react-native-snap-carousel';
-import styles from './SliderEntry.style';
-
+import styles from '../utils/SliderEntry.style';
+import { Navigation } from 'react-navigation';
 
 export default class SliderEntry extends Component {
 
@@ -48,26 +48,26 @@ export default class SliderEntry extends Component {
         ) : false;
 
         return (
-          <TouchableOpacity
-            activeOpacity={1}
-            style={styles.slideInnerContainer}
-            onPress={() => { alert(`You've clicked '${title}'`); }}
-            >
-              <View style={styles.shadow} />
-              <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
-                  { this.image }
-                  <View style={[styles.radiusMask, even ? styles.radiusMaskEven : {}]} />
-              </View>
-              <View style={[styles.textContainer, even ? styles.textContainerEven : {}]}>
-                  { uppercaseTitle }
-                  <Text
-                    style={[styles.subtitle, even ? styles.subtitleEven : {}]}
-                    numberOfLines={2}
-                  >
-                      { subtitle }
-                  </Text>
-              </View>
-          </TouchableOpacity>
+            <TouchableOpacity
+              activeOpacity={1}
+              style={styles.slideInnerContainer}
+              onPress={() => { alert(`You've clicked '${title}'`); }}
+              >
+                <View style={styles.shadow} />
+                <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
+                    { this.image }
+                    <View style={[styles.radiusMask, even ? styles.radiusMaskEven : {}]} />
+                </View>
+                <View style={[styles.textContainer, even ? styles.textContainerEven : {}]}>
+                    { uppercaseTitle }
+                    <Text
+                      style={[styles.subtitle, even ? styles.subtitleEven : {}]}
+                      numberOfLines={2}
+                    >
+                        { subtitle }
+                    </Text>
+                </View>
+            </TouchableOpacity>
         );
     }
 }
