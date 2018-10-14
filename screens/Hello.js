@@ -37,7 +37,7 @@ export default class ButtonThemeExample extends Component {
           <DoubleButton
             style={{top: 80}}
             text1="Continue"
-            handleClick={() => this.props.navigation.navigate('WhereDoYouLive')}
+            handleClick={() => this.props.navigation.navigate('WhereDoYouLive', {name: this.state.name})}
           />
       </Container>
 

@@ -9,6 +9,7 @@ export default class WeNeedToGetToKnowYou extends React.Component {
 
  render() {
   const { navigate } = this.props.navigation;
+  const language = this.props.navigation.getParam('language')
    return (
      <Container>
      <Header/>

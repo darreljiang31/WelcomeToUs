@@ -31,9 +31,11 @@ export default class ButtonThemeExample extends Component {
 
   render() {
     const { navigate } = this.props.navigation;
+    const name = this.props.navigation.getParam('name', 'Not Yet Provided')
     return (
       <Container >
         <Header />
+        <Text>{name}</Text>
           <Content style={{height: 200}}>
             <Text style={{alignSelf: 'center'}}>Profile Progress</Text>
             <Progress.Bar progress={0.2} width={300} style={{alignSelf: 'center'}} />

@@ -28,56 +28,54 @@ export default class CardListExample extends Component {
     const { navigate } = this.props.navigation;
 
     return (
-      <Container>
-        <Header />
-        <Content>
-          <Card style={{padding: 30}}>
-            <CardItem button onPress={() =>{
+      <Container style={{backgroundColor: "#222222"}}>
+        <Content style={{paddingTop: 150}}>
+            <CardItem
+              style={{alignSelf: 'center', marginBottom: 25, width: 300, backgroundColor: 'rgba(0,0,0,0.0)', borderBottomWidth: 2, borderBottomColor: '#FEB51E'}}
+              button onPress={() =>{
               this.setState({language: "English"})
-              this.props.navigation.navigate('WeNeedToGetToKnowYou')
+              this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "English"})
               }}>
-              <Text>Hello</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
+              <Icon name='ios-checkmark' style={{ fontSize: 60, color:'#D4D4D4', fontWeight: 'bold', marginBottom: -20}}/>
+              <Text style={{alignSelf: 'center', fontSize: 36, textAlign: 'center', paddingLeft: 31, color:'#D4D4D4', fontWeight: 'bold', marginBottom: -20}}>
+              Hello</Text>
              </CardItem>
-             <CardItem button onPress={() =>{
+             <CardItem
+                style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
+                button onPress={() =>{
                 this.setState({language: "French"})
-                this.props.navigation.navigate('WeNeedToGetToKnowYou')
+                this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "French"})
              }}>
-              <Text>Bonjour</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
+              <Text style={{fontSize: 36, color: '#D4D4D4'}}>Bonjour</Text>
+             >
              </CardItem>
-             <CardItem button onPress={() =>{
+             <CardItem
+               style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
+               button onPress={() =>{
                this.setState({language: "Spanish"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Spanish"})
              }}>
-              <Text>Hola</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
+              <Text style={{fontSize: 36, color: '#D4D4D4'}}>Hola</Text>
+
              </CardItem>
-             <CardItem button onPress={() =>{
+             <CardItem
+               style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
+               button onPress={() =>{
                this.setState({language: "Sanskrit"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Sanskrit"})
              }}>
-              <Text>Namaste</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
+              <Text style={{fontSize: 36, color: '#D4D4D4'}}>Namaste</Text>
+
              </CardItem>
-             <CardItem button onPress={() =>{
+             <CardItem
+               style={{alignSelf: 'center', marginBottom: 25, width: 300, paddingLeft: 80, backgroundColor: 'rgba(0,0,0,0.0)'}}
+               button onPress={() =>{
                this.setState({language: "Italian"})
-               this.props.navigation.navigate('WeNeedToGetToKnowYou')
+               this.props.navigation.navigate('WeNeedToGetToKnowYou', {language: "Italian"})
              }}>
-              <Text>Ciao</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
+              <Text style={{fontSize: 36, color: '#D4D4D4'}}>Ciao</Text>
+
              </CardItem>
-           </Card>
         </Content>
       </Container>
     );
