@@ -18,7 +18,7 @@ export default class ButtonThemeExample extends Component {
       <Container style={{backgroundColor: "#222222"}}>
         <Content style={{paddingTop: 50}}>
         <Text style={{alignSelf: 'center', color:'#D4D4D4'}}>Profile Progress</Text>
-        <Progress.Bar progress={0.5} width={300} style={{alignSelf: 'center', color:'rgba(232, 36, 70, 1)'}} />
+        <Progress.Bar color='rgba(232, 36, 70, 1)' progress={0} width={300} style={{alignSelf: 'center'}}  />
           <Text style={styles.text}>Hello! What's your name?</Text>
 
           <Form style={styles.input}>
