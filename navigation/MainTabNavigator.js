@@ -18,20 +18,21 @@ import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
 import MentorScreen from '../screens/MentorScreen';
 import MentorProfileScreen from '../screens/MentorProfileScreen';
+import ProfileScreen from '../screens/ProfileScreen'
 import SlideEntryScreen from '../screens/SliderEntry'
 
-const ButtonStack = createStackNavigator({
-  Button: HelloScreen,
+const ProfileStack = createStackNavigator({
+  Button: ProfileScreen,
 })
 
-ButtonStack.navigationOptions = {
-  tabBarLabel: 'Button',
+ProfileStack.navigationOptions = {
+  tabBarLabel: 'Profile',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
+          ? `ios-contact${focused ? '' : '-outline'}`
           : 'md-information-circle'
       }
     />
@@ -53,13 +54,13 @@ const HomeStack = createStackNavigator({
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Main',
+  tabBarLabel: 'Main Menu',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
+          ? `ios-menu${focused ? '' : '-outline'}`
           : 'md-information-circle'
       }
     />
@@ -74,13 +75,41 @@ const MentorProfileStack = createStackNavigator({
   Profile: MentorProfileScreen,
 })
 
+MentorProfileStack .navigationOptions = {
+  tabBarLabel: 'My Peers',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-people${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  ),
+};
+
 const LanguageSelectionStack = createStackNavigator({
   LanguageSelectionScreen: LanguageSelectionScreen,
 })
 
+LanguageSelectionStack.navigationOptions = {
+  tabBarLabel: 'Map',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={
+        Platform.OS === 'ios'
+          ? `ios-pin${focused ? '' : '-outline'}`
+          : 'md-information-circle'
+      }
+    />
+  ),
+};
+
 export default createBottomTabNavigator({
-  LanguageSelectionStack,
-  MentorProfileStack,
   HomeStack,
-  ButtonStack,
+  ProfileStack,
+  MentorProfileStack,
+  LanguageSelectionStack,
 });
