@@ -2,12 +2,15 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
+import LanguageSelectionScreen from '../screens/LanguageSelectionScreen'
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
+import MainScreen from '../screens/MainScreen';
+import MentorScreen from '../screens/MentorScreen';
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -29,11 +32,12 @@ ButtonStack.navigationOptions = {
 
 
 const HomeStack = createStackNavigator({
-  Home: HelloScreen,
+  Main: MainScreen,
+  Mentor: MentorScreen,
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: 'Main',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -45,6 +49,10 @@ HomeStack.navigationOptions = {
     />
   ),
 };
+
+const LanguageSelectionStack = createStackNavigator({
+  LanguageSelection: LanguageSelectionScreen,
+})
 
 const LinksStack = createStackNavigator({
   Links: LinksScreen,
@@ -75,6 +83,7 @@ SettingsStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
+  LanguageSelectionStack,
   HomeStack,
   LinksStack,
   SettingsStack,

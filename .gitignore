@@ -2,3 +2,4 @@ node_modules/**/*
 .expo/**/*
 ios/*
 run/.expo
+npm-debug.log.1417204855
