@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "jest-expo": "30.0.0",
-    "react-native-easy-grid": "^0.2.0"
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-snap-carousel": "^3.7.5"
   }
 }
