@@ -7,6 +7,7 @@ import WhatBringsYouHereScreen from '../screens/WhatBringsYouHereScreen';
 import LanguageSelectionScreen from '../screens/LanguageSelectionScreen';
 import NumberOfChildrenScreen from '../screens/NumberOfChildrenScreen';
 import BioScreen from '../screens/BioScreen';
+import OpeningScreen from '../screens/OpeningScreen';
 import ProfileScreen from '../screens/ProfileScreen'
 import WeNeedToGetToKnowYouScreen from '../screens/WeNeedToGetToKnowYouScreen';
 import UploadPhotoScreen from '../screens/UploadPhotoScreen'
@@ -37,14 +38,17 @@ ProfileStack.navigationOptions = {
       }
     />
   ),
-};
+}
 
+const OpeningStack = createStackNavigator({
+  Opening: OpeningScreen,
+})
 
 const HomeStack = createStackNavigator({
+  LanguageSelection: LanguageSelectionScreen,
   Main: MainScreen,
   Mentor: MentorScreen,
   MentorProfile: MentorProfileScreen,
-  LanguageSelection: LanguageSelectionScreen,
   Hello: HelloScreen,
   WhereDoYouLive: WhereDoYouLiveScreen,
   WhatBringsYouHere: WhatBringsYouHereScreen,
@@ -110,6 +114,7 @@ LanguageSelectionStack.navigationOptions = {
 };
 
 export default createBottomTabNavigator({
+  OpeningStack,
   HomeStack,
   ProfileStack,
   MentorProfileStack,
