@@ -11,6 +11,7 @@ import ButtonScreen from '../screens/ButtonScreen';
 import HelloScreen from '../screens/Hello';
 import MainScreen from '../screens/MainScreen';
 import MentorScreen from '../screens/MentorScreen';
+import MentorProfileScreen from '../screens/MentorProfileScreen';
 
 const ButtonStack = createStackNavigator({
   Button: HelloScreen,
@@ -54,6 +55,10 @@ const WhereDoYouLiveStack = createStackNavigator({
   WhereDoYouLive: WhereDoYouLiveScreen,
 })
 
+const MentorProfileStack = createStackNavigator({
+  Profile: MentorProfileScreen,
+})
+
 const LinksStack = createStackNavigator({
   Links: LinksScreen,
 });
@@ -84,6 +89,8 @@ SettingsStack.navigationOptions = {
 
 export default createBottomTabNavigator({
   WhereDoYouLiveStack,
+  MentorProfileStack,
+  BioStack,
   HomeStack,
   LinksStack,
   SettingsStack,
