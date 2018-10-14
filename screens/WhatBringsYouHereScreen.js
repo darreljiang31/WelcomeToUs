@@ -9,6 +9,7 @@ import {
   Header,
   ListItem,
   Text,
+  View,
 } from 'native-base';
 import * as Progress from 'react-native-progress';
 import ProgressStatus from './ProgressStatus';
@@ -107,12 +108,16 @@ export default class ButtonThemeExample extends Component {
                   <Text>The Beer!</Text>
                 </Body>
               </ListItem>
-            <DoubleButton
-              text1="Continue"
-              handleClick={() => this.props.navigation.navigate('UploadPhoto')}
-            />
+
+                <DoubleButton
+                  text1="Continue"
+                  handleClick={() => this.props.navigation.navigate('UploadPhoto')}
+                />
             </Container>
+            {/* <View style={{alignSelf:"center", left: -35}}> */}
+              {/* </View> */}
           </Content>
+
       </Container>
     );
   }
@@ -124,7 +129,6 @@ const styles = StyleSheet.create({
     color: 'rgb(42,42,42)',
     textAlign: 'center',
     width: 330,
-    height: 93,
     left: 23,
     top: 80,
   },

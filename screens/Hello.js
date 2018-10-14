@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Text, Button } from 'native-base';
 import { AppRegistry, View, StyleSheet, TextInput } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import DoubleButton from './DoubleButton';
 
 export default class ButtonThemeExample extends Component {
   constructor(props) {
@@ -27,13 +28,13 @@ export default class ButtonThemeExample extends Component {
             </Item>
           </Form>
 
-          <Button
-            primary style={styles.button}
-            onPress={() => this.props.navigation.navigate('WhereDoYouLive')}
-          >
-          <Text> OK </Text></Button>
 
         </Content>
+          <DoubleButton
+            style={{top: 80}}
+            text1="Continue"
+            handleClick={() => this.props.navigation.navigate('WhereDoYouLive')}
+          />
       </Container>
 
     );
